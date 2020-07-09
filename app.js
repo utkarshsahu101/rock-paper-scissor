@@ -28,7 +28,7 @@ function win(userChoice, computerChoice) {
 
   result.innerHTML = `${userChoice}${smallUser} beats ${computerChoice}${smallComp}. You win....`;
   userChoiceDiv.classList.add("green-shadow");
-  setTimeout(() => userChoiceDiv.classList.remove("green-shadow"), 800);
+  setTimeout(() => userChoiceDiv.classList.remove("green-shadow"), 10000);
 }
 function lose(userChoice, computerChoice) {
   const smallUser = "user".fontsize(3).sub();
@@ -40,7 +40,7 @@ function lose(userChoice, computerChoice) {
 
   result.innerHTML = `${userChoice}${smallUser} loses to  ${computerChoice}${smallComp}. You lost....`;
   userChoiceDiv.classList.add("red-shadow");
-  setTimeout(() => userChoiceDiv.classList.remove("red-shadow"), 800);
+  setTimeout(() => userChoiceDiv.classList.remove("red-shadow"), 10000);
 }
 function draw(userChoice, computerChoice) {
   const smallUser = "user".fontsize(3).sub();
@@ -51,7 +51,7 @@ function draw(userChoice, computerChoice) {
 
   result.innerHTML = `${userChoice}${smallUser} equals ${computerChoice}${smallComp}. It's a draw.`;
   userChoiceDiv.classList.add("black-shadow");
-  setTimeout(() => userChoiceDiv.classList.remove("black-shadow"), 800);
+  setTimeout(() => userChoiceDiv.classList.remove("black-shadow"), 10000);
 }
 function game(userChoice) {
   const computerChoice = getComputerChoice();
